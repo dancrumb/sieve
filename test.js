@@ -2,11 +2,13 @@
 var expect = require('chai').expect;
 var sieve = require('./sieve');
 var sieveObject = require('./sieve-object');
+var sieveFunc = require('./sieve-func');
 var _ = require('lodash');
 var primesTo3000 = require('./primesTo3000.json').primes;
 
 var sievers = {
     object: sieveObject.getPrimes,
+    func: sieveFunc.getPrimes,
     mutate: _.partial(sieve.getPrimes, 'mutate'),
     iterate: _.partial(sieve.getPrimes, 'iterate'),
     clone: _.partial(sieve.getPrimes, 'clone')
