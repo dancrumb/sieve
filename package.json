@@ -1,0 +1,28 @@
+{
+  "name": "sieve",
+  "version": "1.0.0",
+  "description": "Sieve of Eratosthenes",
+  "main": "sieve.js",
+  "scripts": {
+    "test": "istanbul cover _mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancrumb/sieve.git"
+  },
+  "author": "Dan Rumney <dancrumb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dancrumb/sieve/issues"
+  },
+  "homepage": "https://github.com/dancrumb/sieve#readme",
+  "devDependencies": {
+    "benchmark": "^2.1.0",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "lodash": "^4.6.1"
+  }
+}
